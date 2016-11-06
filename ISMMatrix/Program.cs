@@ -60,14 +60,13 @@ namespace ISMMatrix
 
             int  x = 0;
             int[] arr = new int[m];
-            
             int[] arr2 = new int[n];
             int[] arr4 = new int[n];
             for (int i = 0; i < n; i++)
             {
                 for (int z = 0; z < m; z++)
                 {
-                    for (int j = 0; j < m; j++)
+                    for (int j = 1; j < m - 1; j++)
                     {
                         if (matrix[i, z] == matrix[i, j])
                         {
